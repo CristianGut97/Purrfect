@@ -1,45 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href=".\estilos.css">
-	<script snc=".\main.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-	<title>Purrfect</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href=".\estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Purrfect</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <!-- <img src=".\PurrfectShop\isotipo.png"> -->
+          <h1 class="logo">PURRFECTSHOP</h1>
+        </header>
+        <nav>
+          <ul>
+            <li>
+              <a class="botonCompras" href=".\index.html">
+                <i class="bi bi-bag-heart-fill"></i>Compras
+              </a>
+            </li>
+            <li>
+              <a class="botonCarrito active" href=".\carrito.html">
+                <i class="bi bi-cart-fill"></i>carrito
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p class="textoFooter">© 2025 Purrfect</p>
+        </footer>
+      </aside>
+      <main>
+        <h2 class="tituloCompras">Carrito</h2>
+        <div class="contenedorCarrito">
+          <p class="carritoVacio">
+            Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i>
+          </p>
+          <div class="carritoProductos">
+            <div class="carritoProducto">
+              <img src=".\PurrfectShop\Item1-Rascador.png" />
+              <div class="carritoProductoTitulo">
+                <small>Titulo</small>
+                <h3>Rascador</h3>
+              </div>
+              <div class="carritoProductoCantidad">
+                <small>Cantidad</small>
+                <p>2</p>
+              </div>
+              <div class="carritoProdcutoPrecio">
+                <small>Precio</small>
+                <p>$12,99</p>
+              </div>
+              <div class="carritoProductoSubtotal">
+                <small>Subtotal</small>
+                <p>$25,98</p>
+              </div>
+              <button class="carritoProductoEliminar">
+                <i class="bi bi-recycle"></i>
+              </button>
+            </div>
 
-	<div class="wrapper">
-		<aside>
-			<header>
-				<!-- <img src=".\PurrfectShop\isotipo.png"> -->
-				<h1 class="logo">PURRFECTSHOP</h1>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						<a class="botonCompras" href=".\index.html">
-							<i class="bi bi-bag-heart-fill"></i>Compras
-						</a>
-					</li>
-					<li>
-						<a class="botonCarrito active" href=".\carrito.html">
-							<i class="bi bi-cart-fill"></i>carrito
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<footer>
-				<p class="textoFooter">© 2025 Purrfect</p>
-			</footer>
+            <div class="carritoProducto">
+              <img src=".\PurrfectShop\Juguete item 2.webp" />
+              <div class="carritoProductoTitulo">
+                <small>Titulo</small>
+                <h3>Juguete</h3>
+              </div>
+              <div class="carritoProductoCantidad">
+                <small>Cantidad</small>
+                <p>3</p>
+              </div>
+              <div class="carritoProdcutoPrecio">
+                <small>Precio</small>
+                <p>$17,50</p>
+              </div>
+              <div class="carritoProductoSubtotal">
+                <small>Subtotal</small>
+                <p>$52,5</p>
+              </div>
+              <button class="carritoProductoEliminar">
+                <i class="bi bi-recycle"></i>
+              </button>
+            </div>
+          </div>
 
-		</aside>
-		<main>
-			<h2 class="tituloCompras">Carrito</h2>
-			<div class="contenedorCarrito">
-				<p class="carritoVacio">Tu carrito esta vacio</p>
-			</div>
-		</main>
-	</div>
+          <div class="carritoAcciones">
+            <div class="carritoAccionesIzquierda">
+              <button class="carritoAccionesVaciar">Vaciar carrito</button>
+            </div>
+            <div class="carritoAccionesDerecha">
+              <div class="carritoAccionesTotal">
+                <p>Total</p>
+                <p id="total">$78,48</p>
+              </div>
+              <button class="CarritoAccionesComprar">COMPRAR AHORA</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
 
-</body>
+    <script src=".\main.js"></script>
+  </body>
 </html>

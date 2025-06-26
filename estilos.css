@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-{
+:root {
+	--clr-main: #355C7D;
+	--clr-mainDark: #2d8be9;
+	--clr-gray: #EAEAEA;
+	--clr-marino: #354259;
+	--clr-chocolate: #6B4C3B;
+	--clr-menta: #C2F5D5;
+	--clr-white: #FAFAFA;
+
+
+}
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Fredoka', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,input,textarea, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
 	margin: 0;
 	padding: 0;
 }
@@ -18,4 +40,77 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	background-color:var(--clr-main);
+}
+
+aside {
+	padding: 2rem;
+	color: var(--clr-white);
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo {
+	font-weight: 400;
+	font-size: 1.5rem;
+	font-style: oblique;
+}
+
+.textoFooter {
+	color: var(--clr-mainDark);
+	font-size: .85rem;
+}
+
+main {
+	background-color: var(--clr-white);
+	margin: 1rem;
+	margin-left: 0;
+	border-radius: 2rem;
+	padding: 3rem;
+}
+
+.tituloCompras {
+	color: var(--clr-main);
+	margin-bottom: 2rem;
+} 
+
+.contenedorProductos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.productoImagen {
+	max-width: 100%;
+	border-radius: 1rem; 
+}
+
+.productoDetalles {
+	background-color: var(--clr-main);
+	color: var(--clr-gray);
+	padding: .5rem;
+	border-radius: 1rem;
+	margin-top: -1.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.productoTitulo {
+	font-size: 1rem;
+} 
+
+.productoAgregar {
+	border: 0;
+	background-color: var(--clr-white);
 }
