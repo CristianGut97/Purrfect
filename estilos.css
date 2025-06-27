@@ -40,6 +40,7 @@ ul {
 
 a {
 	text-decoration: none;
+	color: var(--clr-white);
 }
 
 .wrapper {
@@ -50,6 +51,7 @@ a {
 
 aside {
 	padding: 2rem;
+	padding-right: 0;
 	color: var(--clr-white);
 	position: sticky;
 	top: 0;
@@ -63,6 +65,82 @@ aside {
 	font-weight: 400;
 	font-size: 1.5rem;
 	font-style: oblique;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+}
+
+.botonMenu,.botonCarrito, .botonCompras {
+	background-color: transparent;
+	border: 0;
+	color: var(--clr-white);
+	font-size: 1rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	font-weight: 600;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+
+.botonMenu.active, .botonCarrito.active, .botonCompras.active {
+	background-color: var(--clr-white);
+	color: var(--clr-main);
+	width: 100%;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	position: relative;
+}
+
+.botonMenu.active::before, .botonCarrito.active::before, .botonCompras.active::before {
+	content: '';
+	position: absolute;
+	width: 1rem;
+	height: 2rem;
+	bottom: 100%;
+	right: 0;
+	background-color: transparent;
+	border-bottom-right-radius: 1rem;
+	box-shadow: 0 1rem 0 var(--clr-white);
+}
+
+.botonMenu.active::after, .botonCarrito.active::after, .botonCompras.active::after {
+	content: '';
+	position: absolute;
+	width: 1rem;
+	height: 2rem;
+	top: 100%;
+	right: 0;
+	background-color: transparent;
+	border-top-right-radius: 1rem;
+	box-shadow: 0 -1rem 0 var(--clr-white);
+}
+
+.bi-hand-index-fill,
+.bi-hand-index {
+	transform: rotateZ(90deg);
+}
+
+.botonCarrito {
+	margin-top: 2rem;
+}
+
+.items {
+	background-color: var(--clr-white);
+	color: var(--clr-main);
+	padding: 0 .25rem;
+	border-radius: 0.25rem;
+
+}
+
+.botonCarrito.active .items {
+	background-color: var(--clr-main);
+	color: var(--clr-white);
 }
 
 .textoFooter {
@@ -113,4 +191,131 @@ main {
 .productoAgregar {
 	border: 0;
 	background-color: var(--clr-white);
+	color: var(--clr-main);
+	padding: 0.25rem;
+	text-transform: uppercase;
+	border-radius: 2rem;
+	cursor: pointer;
+	border: 2px solid var(--clr-white);
+	transition: background-color .3s, color .3s;
+}
+
+.productoAgregar:hover {
+	background-color: var(--clr-main);
+	color: var(--clr-white);
+}
+
+/** CARRITO **/
+
+.contenedorCarrito {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.carritoVacio, .carritoComprado {
+	color: var(--clr-main);
+	
+}
+
+.carritoProductos {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+}
+
+.carritoProducto {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--clr-gray);
+	color: var(--clr-main);
+	padding: .5rem;
+	padding-right: 1.75rem;
+	border-radius: 1rem;
+}
+
+.carritoProductoImagen {
+	width: 4rem;
+	border-radius: 1rem;
+}
+
+.carritoProducto small {
+	font-size: 0.75rem;
+}
+
+.carritoProductoEliminar {
+	border: 0;
+	background-color: transparent;
+	color: red;
+	cursor: pointer;
+	border-color: transparent;
+	transition: background-color .3s, color .3s;
+	transform: scale(1.6);
+	padding: 0.1rem;
+}
+
+.carritoProductoEliminar:hover {
+	background-color: red;
+	color: var(--clr-white);
+	border-radius: .2rem;
+}
+
+.carritoAcciones {
+	display: flex;
+	justify-content: space-between;
+}
+
+.carritoAccionesVaciar {
+	border: 0;
+	background-color: var(--clr-gray);
+	padding: 1rem;
+	border-radius: 1rem;
+	color: var(--clr-main);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color .5s, color .5s;
+}
+
+.carritoAccionesVaciar:hover {
+	background-color: var(--clr-main);
+	color: var(--clr-white);
+}
+
+.carritoAccionesDerecha {
+	display: flex;
+
+}
+
+.carritoAccionesTotal {
+	display: flex;
+	background-color: var(--clr-gray);
+	padding: 1rem;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	color: var(--clr-main);
+	text-transform: uppercase; 
+	gap: 1rem;
+}
+
+.carritoAccionesComprar {
+	border: 0;
+	background-color: var(--clr-main);
+	padding: 1rem;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	color: var(--clr-white);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color .5s, color .5s;
+}
+
+.carritoAccionesComprar:hover {
+	background-color: var(--clr-mainDark);
+	color: var(--clr-white);
+}
+
+.disabled {
+	display: none;
 }
