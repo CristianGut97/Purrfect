@@ -46,7 +46,7 @@ a {
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	background-color:var(--clr-main);
+	background-color: var(--clr-main);
 }
 
 aside {
@@ -66,6 +66,7 @@ aside {
 	font-size: 1.5rem;
 	font-style: oblique;
 }
+
 .menu {
 	display: flex;
 	flex-direction: column;
@@ -73,7 +74,9 @@ aside {
 
 }
 
-.botonMenu,.botonCarrito, .botonCompras {
+.botonMenu,
+.botonCarrito,
+.botonCompras {
 	background-color: transparent;
 	border: 0;
 	color: var(--clr-white);
@@ -85,10 +88,13 @@ aside {
 	font-weight: 600;
 	padding: 1rem;
 	font-size: 1rem;
+	width: 100%;
 }
 
 
-.botonMenu.active, .botonCarrito.active, .botonCompras.active {
+.botonMenu.active,
+.botonCarrito.active,
+.botonCompras.active {
 	background-color: var(--clr-white);
 	color: var(--clr-main);
 	width: 100%;
@@ -97,7 +103,9 @@ aside {
 	position: relative;
 }
 
-.botonMenu.active::before, .botonCarrito.active::before, .botonCompras.active::before {
+.botonMenu.active::before,
+.botonCarrito.active::before,
+.botonCompras.active::before {
 	content: '';
 	position: absolute;
 	width: 1rem;
@@ -109,7 +117,9 @@ aside {
 	box-shadow: 0 1rem 0 var(--clr-white);
 }
 
-.botonMenu.active::after, .botonCarrito.active::after, .botonCompras.active::after {
+.botonMenu.active::after,
+.botonCarrito.active::after,
+.botonCompras.active::after {
 	content: '';
 	position: absolute;
 	width: 1rem;
@@ -130,7 +140,7 @@ aside {
 	margin-top: 2rem;
 }
 
-.items {
+.numeroCarrito {
 	background-color: var(--clr-white);
 	color: var(--clr-main);
 	padding: 0 .25rem;
@@ -138,7 +148,7 @@ aside {
 
 }
 
-.botonCarrito.active .items {
+.botonCarrito.active .numeroCarrito {
 	background-color: var(--clr-main);
 	color: var(--clr-white);
 }
@@ -159,7 +169,7 @@ main {
 .tituloCompras {
 	color: var(--clr-main);
 	margin-bottom: 2rem;
-} 
+}
 
 .contenedorProductos {
 	display: grid;
@@ -169,7 +179,7 @@ main {
 
 .productoImagen {
 	max-width: 100%;
-	border-radius: 1rem; 
+	border-radius: 1rem;
 }
 
 .productoDetalles {
@@ -186,7 +196,7 @@ main {
 
 .productoTitulo {
 	font-size: 1rem;
-} 
+}
 
 .productoAgregar {
 	border: 0;
@@ -213,9 +223,10 @@ main {
 	gap: 1.5rem;
 }
 
-.carritoVacio, .carritoComprado {
+.carritoVacio,
+.carritoComprado {
 	color: var(--clr-main);
-	
+
 }
 
 .carritoProductos {
@@ -295,7 +306,7 @@ main {
 	border-top-left-radius: 1rem;
 	border-bottom-left-radius: 1rem;
 	color: var(--clr-main);
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	gap: 1rem;
 }
 

@@ -18,18 +18,23 @@
         <nav>
           <ul class="menu">
             <li>
-              <button class="botonMenu active">
-                <i class="bi bi-hand-index-fill"></i>Compras
+              <button id="Todos" class="botonMenu botonCategoria active">
+                <i class="bi bi-shop"></i>Todos los productos
+              </button>
+            </li>
+            <li>
+              <button id="Varios" class="botonMenu botonCategoria">
+                <i class="bi bi-backpack-fill"></i>Varios
+              </button>
+            </li>
+            <li>
+              <button id="Juguetes" class="botonMenu botonCategoria">
+                <i class="bi bi-dribbble"></i>Juguetes
               </button>
             </li>
             <li>
               <button class="botonMenu">
-                <i class="bi bi-hand-index"></i>Blog
-              </button>
-            </li>
-            <li>
-              <button class="botonMenu">
-                <i class="bi bi-search-heart-fill"></i>Buscar
+                <i class="bi bi-chat-heart-fill"></i>Blog
               </button>
             </li>
             <!-- <li> -->
@@ -37,7 +42,9 @@
             <!-- </li> -->
             <li>
               <a class="botonCarrito" href=".\carrito.html">
-                <i class="bi bi-cart-fill"></i>carrito<span class="items"
+                <i class="bi bi-cart-fill"></i>carrito<span
+                  class="numeroCarrito"
+                  id="numeroCarrito"
                   >0</span
                 >
               </a>
@@ -49,105 +56,9 @@
         </footer>
       </aside>
       <main>
-        <h2 class="tituloCompras">Productos</h2>
-        <div class="contenedorProductos">
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\Item1-Rascador.png"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Rascador de carton corrugado</h3>
-              <p class="productoPrecio">$12,99</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\jugueteplumas.jpg"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Juguete interactivo con plumas</h3>
-              <p class="productoPrecio">$17,50</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\fuete item 3.webp"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Fuente de agua automatica</h3>
-              <p class="productoPrecio">$28,99</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img class="productoImagen" src=".\PurrfectShop\camacueva.jpg" />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Cama cueva</h3>
-              <p class="productoPrecio">$24,95</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <!--add-->
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\arenero2.webp"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Arenero cerrado con filtro</h3>
-              <p class="productoPrecio">$39,99</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\torre_gato6.jpg"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Torre para gatos</h3>
-              <p class="productoPrecio">$198,50</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\portaPlegable.jpg"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Transportadora plegable</h3>
-              <p class="productoPrecio">$34,80</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\laser item 8.jpg"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Dispositivo laser automatico</h3>
-              <p class="productoPrecio">$21,45</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
-          <div class="producto">
-            <img
-              class="productoImagen"
-              src=".\PurrfectShop\collar9.webp"
-            />
-            <div class="productoDetalles">
-              <h3 class="productoTitulo">Collar antipulgas natural</h3>
-              <p class="productoPrecio">$11,70</p>
-              <button class="productoAgregar">agregar</button>
-            </div>
-          </div>
+        <h2 class="tituloCompras" id="tituloPrincipal">Todos los productos</h2>
+        <div id="contenedorProductos" class="contenedorProductos">
+          <!-- Se rellena automaticamente con JS-->
         </div>
       </main>
     </div>

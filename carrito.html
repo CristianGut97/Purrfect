@@ -24,8 +24,8 @@
             </li>
             <li>
               <a class="botonCarrito active" href=".\carrito.html">
-                <i class="bi bi-cart-fill"></i>carrito<span class="items"
-                  >0</span>
+                <i class="bi bi-cart-fill"></i
+                >carrito<!--<span class="numeroCarrito">0</span>-->
               </a>
             </li>
           </ul>
@@ -37,76 +37,39 @@
       <main>
         <h2 class="tituloCompras">Carrito</h2>
         <div class="contenedorCarrito">
-          <p class="carritoVacio">
+          <p id="carritoVacio" class="carritoVacio">
             Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i>
           </p>
-          <div class="carritoProductos ">
-            <div class="carritoProducto">
-              <img class="carritoProductoImagen" src=".\PurrfectShop\Item1-Rascador.png" />
-              <div class="carritoProductoTitulo">
-                <small>Titulo</small>
-                <h3>Rascador</h3>
-              </div>
-              <div class="carritoProductoCantidad">
-                <small>Cantidad</small>
-                <p>2</p>
-              </div>
-              <div class="carritoProdcutoPrecio">
-                <small>Precio</small>
-                <p>$12,99</p>
-              </div>
-              <div class="carritoProductoSubtotal">
-                <small>Subtotal</small>
-                <p>$25,98</p>
-              </div>
-              <button class="carritoProductoEliminar">
-                <i class="bi bi-recycle"></i>
-              </button>
-            </div>
-
-            <div class="carritoProducto">
-              <img class="carritoProductoImagen" src=".\PurrfectShop\jugueteplumas.jpg" />
-              <div class="carritoProductoTitulo">
-                <small>Titulo</small>
-                <h3>Juguete</h3>
-              </div>
-              <div class="carritoProductoCantidad">
-                <small>Cantidad</small>
-                <p>3</p>
-              </div>
-              <div class="carritoProdcutoPrecio">
-                <small>Precio</small>
-                <p>$17,50</p>
-              </div>
-              <div class="carritoProductoSubtotal">
-                <small>Subtotal</small>
-                <p>$52,5</p>
-              </div>
-              <button class="carritoProductoEliminar">
-                <i class="bi bi-recycle"></i>
-              </button>
-            </div>
+          <div id="carritoProductos" class="carritoProductos disabled">
+            <!--se rellena con js-->
           </div>
 
-          <div class="carritoAcciones ">
+          <div id="carritoAcciones" class="carritoAcciones disabled">
             <div class="carritoAccionesIzquierda">
-              <button class="carritoAccionesVaciar">Vaciar carrito</button>
+              <button id="carritoAccionesVaciar" class="carritoAccionesVaciar">
+                Vaciar carrito
+              </button>
             </div>
             <div class="carritoAccionesDerecha">
               <div class="carritoAccionesTotal">
                 <p>Total</p>
                 <p id="total">$78,48</p>
               </div>
-              <button class="carritoAccionesComprar">COMPRAR AHORA</button>
+              <button
+                id="carritoAccionesComprar"
+                class="carritoAccionesComprar"
+              >
+                COMPRAR AHORA
+              </button>
             </div>
           </div>
-          <p class="carritoComprado ">
+          <p id="carritoComprado" class="carritoComprado disabled">
             Gracias por tu compra!. <i class="bi bi-box2-heart-fill"></i>
           </p>
         </div>
       </main>
     </div>
 
-    <script src=".\main.js"></script>
+    <script src=".\carrito.js"></script>
   </body>
 </html>
