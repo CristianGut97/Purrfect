@@ -91,6 +91,10 @@ aside {
 	width: 100%;
 }
 
+.botonBlog {
+	margin-top: 2rem;
+}
+
 
 .botonMenu.active,
 .botonCarrito.active,
@@ -330,3 +334,62 @@ main {
 .disabled {
 	display: none;
 }
+
+/** blog **/
+
+.postBlog {
+
+	border: 0.2rem solid var(--clr-main);
+	/**background-color: transparent; **/
+	color: var(--clr-main);
+	padding: 10px;
+	height: 700px;
+	overflow-y: auto;
+	margin-bottom: 0;
+	border-top-left-radius: 3rem;
+	border-top-right-radius: 3rem;
+
+	
+
+}
+
+.contenedorBlog {
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+	margin-top: 0;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	border-top-color: var(--clr-main);
+	border-left-color: var(--clr-main);
+	border-right-color: var(--clr-main);
+}
+
+#botonEnviar {
+	background-color: var(--clr-main);
+	color: var(--clr-white);
+    font-family: 'Fredoka';
+	border-bottom-right-radius: 2rem;
+	font-style: italic;
+	font-size: large;
+	border-color: transparent;
+	padding: 10px 20px;
+	padding-bottom: 20px;
+}
+
+#nuevoPost {
+	background-color: var(--clr-gray);
+	border-bottom-left-radius: 2rem;
+	flex: 1;
+	font-style: italic;
+	font-size: large;
+    font-family: 'Fredoka';
+	border: 0.2rem solid var(--clr-main);
+	border-top: transparent;
+	border-bottom-color: var(--clr-main);
+	border-left-color: var(--clr-main);
+	padding-left: 15px;
+	color: var(--clr-main);
+}
+
+
