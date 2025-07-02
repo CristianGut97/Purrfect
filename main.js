@@ -97,6 +97,8 @@ const BotonesCategorias = document.querySelectorAll(".botonCategoria");
 const tituloPrincipal = document.querySelector("#tituloPrincipal");
 let botonesAgregar = document.querySelectorAll(".productoAgregar");
 const numeroCarrito = document.querySelector("#numeroCarrito");
+const gatoMilu = document.querySelector("#gatoMilu");
+const gatoCoco = document.querySelector("#gatoCoco");
 
 function cargarProductos(productosElegidos) {
   contenedorProductos.innerHTML = "";
@@ -194,3 +196,11 @@ function actualizarNumeroCarrito() {
   );
   numeroCarrito.innerText = nuevoNumeroCarrito;
 }
+
+gatoMilu.addEventListener("click", () => {
+  alert("El gato del Himalaya es en realidad una raza creada por el ser humano, fruto del cruce entre un gato persa y un siamés.");
+});
+
+gatoCoco.addEventListener("click", () => {
+  alert("Aproximadamente el 80% de los gatos naranjas son machos, y solo un 20% son hembras. Esto se debe a la genética del color naranja, que está ligada al cromosoma X");
+});
