@@ -99,6 +99,9 @@ let botonesAgregar = document.querySelectorAll(".productoAgregar");
 const numeroCarrito = document.querySelector("#numeroCarrito");
 const gatoMilu = document.querySelector("#gatoMilu");
 const gatoCoco = document.querySelector("#gatoCoco");
+const gatoMia = document.querySelector("#gatoMia");
+const gatoSora = document.querySelector("#gatoSora");
+
 
 function cargarProductos(productosElegidos) {
   contenedorProductos.innerHTML = "";
@@ -198,9 +201,18 @@ function actualizarNumeroCarrito() {
 }
 
 gatoMilu.addEventListener("click", () => {
-  alert("El gato del Himalaya es en realidad una raza creada por el ser humano, fruto del cruce entre un gato persa y un siamés.");
+  alert("Milu (Ragdoll): Los gatos Ragdoll son conocidos por su carácter relajado y dócil. Se despatan cuando los levantas, es decir, se dejan caer como un muñeco de trapo, lo que les da su nombre de ragdoll (muñeca de trapo).");
 });
 
 gatoCoco.addEventListener("click", () => {
-  alert("Aproximadamente el 80% de los gatos naranjas son machos, y solo un 20% son hembras. Esto se debe a la genética del color naranja, que está ligada al cromosoma X");
+  alert("Coco (Maine Coon): Los Maine Coons son una de las razas más grandes de gatos domésticos, y sus orejas están decoradas con mechones de pelo, lo que les da una apariencia aún más imponente. Son muy sociables y pueden aprender trucos como los perros.");
 });
+
+gatoMia.addEventListener("click", () => {
+  alert("Mia (Siamés): Los gatos Siameses son muy vocales y a menudo se comunican con sus dueños mediante un maullido característico y fuerte. Son conocidos por su lealtad y suelen seguir a sus humanos por toda la casa.");
+});
+
+gatoSora.addEventListener("click", () => {
+  alert("Sora (Siberiano): El gato Siberiano es famoso por su pelo largo y denso, adaptado a climas fríos. Además, tienen una habilidad única para saltar grandes distancias, gracias a sus poderosas patas traseras.");
+});
+
